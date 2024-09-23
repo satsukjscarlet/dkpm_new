@@ -361,13 +361,32 @@ function cell_html(array $cell, array $query_vars, $is_invalid = false) : string
           $classes[] = 'writable';
         }
 
+            $host = "localhost"; // Địa chỉ máy chủ MySQL
+            $username = "root"; // Tên đăng nhập MySQL
+            $password = ""; // Mật khẩu MySQL
+            $database = "mrbs"; // Tên cơ sở dữ liệu
+            $con_usercode = mysqli_connect($host, $username, $password, $database);
+            $user_code = $booking['create_by'];
+            $sql_usercode = "SELECT * FROM mrbs_users WHERE name = '$user_code' Limit 1";
+            $result_usercode = mysqli_query($con_usercode, $sql_usercode);
+            // Kiểm tra nếu có kết quả
+            if ($result_usercode && mysqli_num_rows($result_usercode) > 0) {
+            // Chuyển kết quả truy vấn thành mảng
+            $user_data = mysqli_fetch_assoc($result_usercode);
+            $display_name = $user_data['display_name'];
+            } else {
+                // Xử lý nếu không có kết quả
+                $display_name = 'Không tìm thấy tên người dùng';
+            }
+            //end lay du lieu
+            
         $html .= '<div class="' . implode(' ', $classes) . '">';
         $html .= '<a href="' . htmlspecialchars(multisite("view_entry.php?$query")) . '"' .
                    ' title="' . htmlspecialchars($booking['description']) . '"' .
                    ' class="' . $booking['type'] . '"' .
                    ' data-id="' . $booking['id'] . '"' .
                    ' data-type="' . $booking['type'] . '">';
-        $html .= htmlspecialchars($booking['name']) . '</a>';
+        $html .= $display_name ."-". htmlspecialchars($booking['name']) . '</a>';
         $html .= "</div>";
       }
     }
@@ -1160,8 +1179,28 @@ function multiday_view_all_rooms_innerhtml($view, $view_all, $year, $month, $day
               $tbody .= get_flex_div($slots, 'free');
             }
             $this_entry = $interval[$room_id][$d][$s][0];
+
+            $host = "localhost"; // Địa chỉ máy chủ MySQL
+            $username = "root"; // Tên đăng nhập MySQL
+            $password = ""; // Mật khẩu MySQL
+            $database = "mrbs"; // Tên cơ sở dữ liệu
+            $con_usercode = mysqli_connect($host, $username, $password, $database);
+            $user_code = $this_entry['create_by'];
+            $sql_usercode = "SELECT * FROM mrbs_users WHERE name = '$user_code' Limit 1";
+            $result_usercode = mysqli_query($con_usercode, $sql_usercode);
+            // Kiểm tra nếu có kết quả
+            if ($result_usercode && mysqli_num_rows($result_usercode) > 0) {
+            // Chuyển kết quả truy vấn thành mảng
+            $user_data = mysqli_fetch_assoc($result_usercode);
+            $display_name = $user_data['display_name'];
+            } else {
+                // Xử lý nếu không có kết quả
+                $display_name = 'Không tìm thấy tên người dùng';
+            }
+            //end lay du lieu
+
             $n =    $this_entry['n_slots'];
-            $text = $this_entry['name'];
+            $text = $display_name."-".$this_entry['name'];
             $classes = get_entry_classes($this_entry);
             $tbody .= get_flex_div($n, $classes, $text, $text);
             $slots = 0;
