@@ -4,3 +4,14 @@ span.flatpickr-weekday:nth-of-type(1),
 span.flatpickr-weekday:nth-of-type(7) {
   color: red;
 }
+.A {
+  background: #99cc66;;
+}
+
+.I {
+  background: #ffff99;;;
+}
+
+.E {
+  background: #ef0b31;;
+}
