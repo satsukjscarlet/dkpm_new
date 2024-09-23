@@ -1,0 +1,6 @@
+th.weekend a:link,
+#month_main th.weekend,
+span.flatpickr-weekday:nth-of-type(1),
+span.flatpickr-weekday:nth-of-type(7) {
+  color: red;
+}

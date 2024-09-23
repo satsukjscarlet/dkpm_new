@@ -1,0 +1,654 @@
+<?php // -*-mode: PHP; coding:utf-8;-*-
+
+// This file contains PHP code that specifies language specific strings
+// The default strings come from lang.en, and anything in a locale
+// specific file will overwrite the default. This is a US/UK English file.
+//
+//
+//
+// This file is PHP code. Treat it as such.
+
+// Used in style.inc
+$vocab["mrbs"]               = "HỆ THỐNG ĐẶT LỊCH SỬ DỤNG PHẦN MỀM";
+$vocab["mrbs_abbr"]          = "MCBS";
+
+// Used in functions.inc
+$vocab["report"]             = "Báo cáo";
+$vocab["admin"]              = "Admin";
+$vocab["help"]               = "Trợ giúp";
+$vocab["search"]             = "Tìm kiếm";
+$vocab["outstanding"]        = "%d đơn đặt phần mềm đang chờ xử lý";
+
+// Used in index.php
+$vocab["bookingsfor"]        = "Đặt phần mềm cho";
+$vocab["bookingsforpost"]    = ""; // Goes after the date
+$vocab["areas"]              = "Địa phương";
+$vocab["today"]              = "Hôm nay";
+$vocab["daybefore"]          = "Tới ngày hôm trước";
+$vocab["dayafter"]           = "Tới ngày hôm sau";
+$vocab["gototoday"]          = "Tới hôm nay";
+$vocab["goto"]               = "Tới";
+$vocab["nav_day"]            = "Ngày";
+$vocab["nav_week"]           = "Tuần";
+$vocab["nav_month"]          = "Tháng";
+$vocab["highlight_line"]     = "Đánh dấu dòng này";
+$vocab["click_to_reserve"]   = "Chọn trên bảng tính để tạo một đơn đặt phần mềm.";
+$vocab["timezone"]           = "Múi giờ";
+$vocab["weekbefore"]         = "Tới tuần trước";
+$vocab["weekafter"]          = "Tới tuần sau";
+$vocab["gotothisweek"]       = "Tới tuần này";
+$vocab["monthbefore"]        = "Tới tháng trước";
+$vocab["monthafter"]         = "Tới tháng sau";
+$vocab["gotothismonth"]      = "Tới tháng này";
+$vocab["no_rooms_for_area"]  = "Không có phần mềm xác định cho loại phần mềm này";
+$vocab["loading"]            = "Đang tải";
+$vocab["saving"]             = "Đang lưu";
+$vocab["week_number"]        = "Tuần %s | ";
+$vocab["create_new_booking"] = "Tạo một đơn đặt phần mềm mới";
+$vocab["select_area"]        = "Chọn loại phần mềm";
+$vocab["select_room"]        = "Chọn phần mềm";
+$vocab["all"]                = "<all>";
+$vocab["registration_level_limited"]              = ' [%1$d/%2$d]';
+$vocab["registration_level_limited_with_names"]   = ' [%1$d/%2$d: %3$s]';
+$vocab["registration_level_unlimited"]            = ' [%1$d]';
+$vocab["registration_level_unlimited_with_names"] = ' [%1$d: %2$s]';
+
+// Used in trailer.inc
+$vocab["viewday"]            = "Xem ngày";
+$vocab["viewweek"]           = "Xem tuần";
+$vocab["viewmonth"]          = "Xem tháng";
+$vocab["ppreview"]           = "Xem trước bản in";
+
+// Used in edit_entry.php
+$vocab["addentry"]           = "Thêm đơn đặt phần mềm";
+$vocab["editentry"]          = "Chỉnh sửa đơn đặt phần mềm";
+$vocab["copyentry"]          = "Sao chép đơn đặt phần mềm";
+$vocab["editseries"]         = "Chỉnh sửa bộ";
+$vocab["copyseries"]         = "Sao chép bộ";
+$vocab["namebooker"]         = "Đơn vị";
+$vocab["fulldescription"]    = "Mục đích sử dụng";
+$vocab["date"]               = "Ngày";
+$vocab["start"]              = "Bắt đầu";
+$vocab["end"]                = "Kết thúc";
+$vocab["start_date"]         = "Thời gian bắt đầu";
+$vocab["end_date"]           = "Thời gian kết thúc";
+$vocab["time"]               = "Thời gian";
+$vocab["period"]             = "Chu trình";
+$vocab["duration"]           = "Thời hạn";
+$vocab["second_lc"]          = "giây";
+$vocab["seconds"]            = "giây";
+$vocab["minute_lc"]          = "phút";
+$vocab["minutes"]            = "phút";
+$vocab["hour_lc"]            = "tiếng";
+$vocab["hours"]              = "tiếng";
+$vocab["day"]                = "ngày";
+$vocab["days"]               = "ngày";
+$vocab["week"]               = "tuần";
+$vocab["weeks"]              = "tuần";
+$vocab["month"]              = "tháng";
+$vocab["months"]             = "tháng";
+$vocab["year_lc"]            = "năm";
+$vocab["years"]              = "năm";
+$vocab["period_lc"]          = "chu trình";
+$vocab["periods"]            = "chu trình";
+$vocab["all_day"]            = "Cả ngày";
+$vocab["area"]               = "Loại phần mềm";
+$vocab["type"]               = "Mức độ ưu tiên";
+$vocab["allow_registration"]        = "Cho phép đăng ký";
+$vocab["registrant_limit_enabled"]  = "Đặt sức chứa sự kiện";
+$vocab["registrant_limit"]          = "Sức chứa sự kiện";
+$vocab["registration_opens"]        = "Mở đăng ký";
+$vocab["registration_closes"]       = "Kết thúc đăng ký";
+$vocab["in_advance"]                = "sau";
+$vocab["in_advance_periods"]        = "trước Thời gian bắt đầu Sự kiện %s";  // a time, eg 09:00 or 9.00am
+$vocab["n_registered"]              = "Hiện tại đã đăng ký";
+$vocab["save"]               = "Xác nhận";
+$vocab["rep_type"]           = "Lịch lặp lại";
+$vocab["rep_type_0"]         = "Không";
+$vocab["rep_type_1"]         = "Hàng ngày";
+$vocab["rep_type_2"]         = "Hàng tuần";
+$vocab["rep_type_3"]         = "Hàng tháng";
+$vocab["rep_type_4"]         = "Hàng năm";
+$vocab["ord_1"]              = "đầu tiên";
+$vocab["ord_2"]              = "thứ hai";
+$vocab["ord_3"]              = "thứ ba";
+$vocab["ord_4"]              = "thứ tư";
+$vocab["ord_5"]              = "thứ năm";
+$vocab["ord_-1"]             = "cuối cùng";
+$vocab["ord_-2"]             = "thứ hai cuối cùng";
+$vocab["ord_-3"]             = "thứ ba cuối cùng";
+$vocab["ord_-4"]             = "thứ tư cuối cùng";
+$vocab["ord_-5"]             = "thứ năm cuối cùng";
+$vocab["rep_end_date"]       = "Ngày kết thúc vòng lặp";
+$vocab["rep_rep_day"]        = "Ngày lặp lại";
+$vocab["rep_interval"]       = "Lặp lại mỗi";
+$vocab["month_absolute"]     = "Vào ngày";
+$vocab["month_relative"]     = "Vào tháng";
+$vocab["skip_conflicts"]     = "Bỏ qua xung đột cũ";
+$vocab["no_mail"]            = "Không gửi email";
+$vocab["ctrl_click"]         = "Sử dụng Control-Click để chọn nhiều hơn một phần mềm";
+$vocab["entryid"]            = "Mục nhập ID ";
+$vocab["repeat_id"]          = "Lặp lại ID ";
+$vocab["brief_description"]  = "Tiêu đề";
+$vocab["status"]             = "Tình trạng";
+$vocab["public"]             = "Công khai";
+$vocab["private"]            = "Riêng tư";
+$vocab["unavailable"]        = "Riêng tư";
+$vocab["is_mandatory_field"] = "là một trường bắt buộc, vui lòng nhập một giá trị.";
+$vocab["missing_mandatory_field"] = "Bạn chưa nhập giá trị cho trường bắt buộc";
+$vocab["confirmed"]          = "Đã xác nhận";
+$vocab["start_after_end"]    = "Ngày bắt đầu sau ngày kết thúc";
+$vocab["start_after_end_long"]     = "Lỗi: ngày bắt đầu không thể sau ngày kết thúc.";
+$vocab["invalid_rep_interval"]     = "Khoảng thời gian vòng lặp phải lớn hơn 0.";
+$vocab["confirm_rep_end_date"]     = "Có vẻ như bạn có thể đã quên đặt vòng lặp " .
+                                     "ngày kết thúc. Bạn vẫn muốn tiếp tục?";
+$vocab["type_reserved_for_admins"] = "Kiểu '%s' được đặt cho admin";
+$vocab["multiroom_not_allowed"]    = "Bạn không được phép đặt một đơn đặt cho nhiều phần mềm.";
+$vocab["edit_entry_nonexistent_room"] = "Bạn đang cố tạo hoặc chỉnh sửa một đơn đặt phần mềm cho một phần mềm " .
+                                        "chưa tồn tại.  Điều này có thể do bạn đang sử dụng " .
+                                        "một đánh dấu không còn hợp lệ. Thông thường không " .
+                                        "khuyến khích sử dụng đánh dấu dẫn bạn thẳng đến " .
+                                        "mẫu đặt phần mềm.  Thay vào đó tốt hơn là tới " .
+                                        "mẫu đặt phần mềm từ khung nhìn lịch.";
+$vocab["home"]                        = "Trang chủ";
+
+// Used in view_entry.php
+$vocab["description"]             = "Thông tin thêm";
+$vocab["room"]                    = "Phần mềm";
+$vocab["createdby"]               = "Tạo bởi";
+$vocab["modifiedby"]              = "Thay đổi bởi";
+$vocab["lastupdate"]              = "Cập nhật lần cuối";
+$vocab["repeat_on"]               = "Ngày lặp";
+$vocab["deleteentry"]             = "Xóa đơn đặt phần mềm";
+$vocab["deleteseries"]            = "Xóa bộ";
+$vocab["exportentry"]             = "Xuất đơn đặt phần mềm";
+$vocab["exportseries"]            = "Xuất bộ";
+$vocab["confirmdel"]              = "Bạn có chắc chắn muốn xóa đơn đặt phần mềm này không?";
+$vocab["confirmdel_series"]       = "Bạn có chắc chắn muốn xóa bộ này không?";
+$vocab["confirm_edit_series"]     = "Người dùng đã đăng ký một sự kiện hoặc nhiều hơn trong bộ này và " .
+                                    "chỉnh sửa bộ sẽ khiến mất tên của chúng.  Bạn có chắc chắn " .
+                                    "bạn muốn tiếp tục không?";
+$vocab["returnprev"]              = "Quay lại trang trước";
+$vocab["invalid_entry_id"]        = "Mục nhập id không hợp lệ.";
+$vocab["invalid_series_id"]       = "Bộ id không hợp lệ.";
+$vocab["confirmation_status"]     = "Tình trạng xác nhận";
+$vocab["tentative"]               = "Đang chờ";
+$vocab["approval_status"]         = "Tình trạng duyệt";
+$vocab["approved"]                = "Đã duyệt";
+$vocab["awaiting_approval"]       = "Đang chờ duyệt";
+$vocab["approve"]                 = "Duyệt";
+$vocab["reject"]                  = "Từ chối";
+$vocab["more_info"]               = "Thông tin thêm";
+$vocab["remind_admin"]            = "Nhắc Admin";
+$vocab["series"]                  = "Bộ";
+$vocab["request_more_info"]       = "Xin vui lòng liệt kê thông tin thêm bạn cần";
+$vocab["reject_reason"]           = "Xin vui lòng đưa lý do cho sự từ chối của bạn với yêu cầu đặt phần mềm này";
+$vocab["send"]                    = "Gửi";
+$vocab["approve_failed"]          = "Đơn đặt phần mềm này không được duyệt.";
+$vocab["no_request_yet"]          = "Chưa có yêu cầu đã gửi"; // Used for the title tooltip on More Info button
+$vocab["last_request"]            = "Yêu cầu gần nhất đã gửi lúc";         // Used for the title tooltip on More Info button
+$vocab["by"]                      = "bởi";                           // Used for the title tooltip on More Info button
+$vocab["sent_at"]                 = "Gửi lúc ";
+$vocab["yes"]                     = "Có";
+$vocab["no"]                      = "Không";
+$vocab["event_registration"]      = "Đăng ký sự kiện";
+$vocab["event_details"]           = "Chi tiết sự kiện";
+$vocab["already_registered"]      = "Bạn đã đăng ký sự kiện này";
+$vocab["register"]                = "Đăng ký";
+$vocab["cancel_registration"]     = "Hủy đăng ký";
+$vocab["registered_by"]           = "Đăng ký bởi";
+$vocab["registered_on"]           = "Đăng ký lúc";
+$vocab["event_full"]              = "Sự kiện này đã đầy.";
+$vocab["confirm_del_registrant"]  = "Bạn có chắc chắn muốn xóa đăng ký của '%s'?";
+
+// Used in edit_entry_handler.php
+$vocab["error"]                  = "Lỗi";
+$vocab["sched_conflict"]         = "Xung đột lịch đặt phần mềm";
+$vocab["conflict"]               = "Kiểm tra lại thông tin thời gian địa điểm đặt phần mềm, đã có lịch đặt";
+$vocab["no_conflicts"]           = "Không có lịch xung đột";
+$vocab["rules_broken"]           = "Đặt phần mềm mới sẽ vi phạm với những chính sách sau";
+$vocab["rules_broken_notices"]   = "[Chỉ thông tin] Đặt phần mềm mới sẽ vi phạm với những chính sách sau";
+$vocab["no_rules_broken"]        = "Không có chính sách xung đột";
+$vocab["schedule"]               = "Lên lịch";
+$vocab["policy"]                 = "Chính sách";
+$vocab["conflicts_with_self"]    = "Bộ này bao gồm các đơn đặt phần mềm xung đột lẫn nhau.  Kiểm tra " .
+                                   "ngày kết thúc và ngày kết thúc vòng lặp của đơn đặt phần mềm.";
+$vocab["too_many_entries"]       = "Một bộ không thể bao gồm nhiều hơn %d đơn đặt phần mềm";
+$vocab["returncal"]              = "Quay lại phần mềmm lịch";
+$vocab["failed_to_acquire"]      = "Thất bại nhận quyền truy cập cơ sở dữ liệu riêng biệt";
+$vocab["invalid_booking"]        = "Đặt phần mềm không hợp lệ";
+$vocab["must_set_description"]   = "Bạn phải đặt một tiêu đề cho đơn đặt phần mềm. Xin vui lòng quay lại và nhập.";
+$vocab["no_rooms_selected"]      = "Bạn phải chọn một phần mềm.";
+$vocab["mail_subject_approved"]  = "Đặt phần mềm đã được duyệt cho %s MRBS"; // $mrbs_company
+$vocab["mail_subject_rejected"]  = "Đặt phần mềm đã bị từ chối cho %s MRBS"; // $mrbs_company
+$vocab["mail_subject_more_info"] = "%s MRBS: yêu cầu nhiều thông tin hơn"; // $mrbs_company
+$vocab["mail_subject_reminder"]  = "Nhắc nhở cho %s MRBS"; // $mrbs_company
+$vocab["mail_body_approved"]     = "Đơn đặt phần mềm đã được duyệt bởi %s; đây là chi tiết:";
+$vocab["mail_body_rej_entry"]    = "Đơn đặt phần mềm đã bị từ chối bởi %s, đây là chi tiết:";
+$vocab["mail_body_more_info"]    = "%s yêu cầu nhiều thông tin hơn cho đơn đặt phần mềm; đây là chi tiết:";
+$vocab["mail_body_reminder"]     = "Nhắc nhở - một đơn đặt phần mềm đang chờ được duyệt; đây là chi tiết:";
+$vocab["mail_body_repeats_booked"]   = "Những ngày sau đã được đặt phần mềm:";
+$vocab["mail_body_repeats_deleted"]  = "Các đơn đặt phần mềm sau đã bị xóa:";
+$vocab["mail_body_exceptions"]       = "Những ngày sau không thể được đặt phần mềm do xung đột:";
+$vocab["mail_subject_new_entry"]     = "Đơn đặt phần mềm đã thêm cho %s MRBS"; // $mrbs_company
+$vocab["mail_subject_changed_entry"] = "Đơn đặt phần mềm đã được sửa cho %s MRBS"; // $mrbs_company
+$vocab["mail_subject_delete"]        = "Đơn đặt phần mềm đã xóa cho %s MRBS"; // $mrbs_company
+$vocab["mail_body_new_entry"]     = "Một đơn đặt phần mềm mới đã được đặt bởi %s, đây là chi tiết:";
+$vocab["mail_body_changed_entry"] = "Một đơn đặt phần mềm mới đã được chỉnh sửa bởi %s, đây là chi tiết:";
+$vocab["mail_body_del_entry"]     = "Một đơn đặt phần mềm mới đã bị xóa bởi %s, đây là chi tiết:";
+$vocab["new_value"]               = "Mới";
+$vocab["old_value"]               = "Cũ";
+$vocab["reason"]                  = "Lý do";
+$vocab["info_requested"]          = "Đã yêu cầu thông tin";
+$vocab["cannot_change_approved_bookings"] = "Các đơn đặt phần mềm đã được duyệt không thể được chỉnh sửa hay bị xóa";
+$vocab["no_simultaneous_bookings"]        = "Bạn không thể đặt hai đơn đặt phần mềm khác nhau trong cùng một khoảng thời gian";
+$vocab["type_not_allowed"]        = 'Bookings of type %1$s are not allowed in %2$s';
+$vocab["min_create_time_before"]  = 'You cannot create a booking which starts in less than %1$d %2$s';
+$vocab["max_create_time_before"]  = 'You cannot create a booking which ends in more than %1$d %2$s';
+$vocab["max_create_time_before_start"]  = 'You cannot create a booking which starts in more than %1$d %2$s';
+$vocab["min_delete_time_before"]  = 'You cannot edit or delete a booking which starts in less than %1$d %2$s';
+$vocab["max_delete_time_before"]  = 'You cannot edit or delete a booking which ends in more than %1$d %2$s';
+$vocab["max_delete_time_before_start"]  = 'You cannot edit or delete a booking which starts in more than %1$d %2$s';
+$vocab["earliest_booking_date"]   = "Ngày đặt phần mềm sớm nhất là %s";
+$vocab["latest_booking_date"]     = "Ngày đặt phần mềm gần nhất là %s";
+$vocab["max_booking_duration"]    = "Khoảng thời hạn tối đa cho một lần đặt phần mềm là";
+$vocab["max_per_day_global"]      = "Số lượng đặt phần mềm tối đa mỗi ngày cho từng người dùng trên toàn hệ thống là";
+$vocab["max_per_week_global"]     = "Số lượng đặt phần mềm tối đa mỗi tuần cho từng người dùng trên toàn hệ thống là";
+$vocab["max_per_month_global"]    = "Số lượng đặt phần mềm tối đa mỗi tháng cho từng người dùng trên toàn hệ thống là";
+$vocab["max_per_year_global"]     = "Số lượng đặt phần mềm tối đa mỗi năm cho từng người dùng trên toàn hệ thống là";
+$vocab["max_per_future_global"]   = "Số lượng đặt phần mềm ngoài ngạch tối đa cho từng người dùng trên toàn hệ thống là";
+$vocab["max_per_day_area"]        = "Số lượng đặt phần mềm tối đa mỗi ngày cho từng người dùng trong loại phần mềm này là";
+$vocab["max_per_week_area"]       = "Số lượng đặt phần mềm tối đa mỗi tuần cho từng người dùng trong loại phần mềm này là";
+$vocab["max_per_month_area"]      = "Số lượng đặt phần mềm tối đa mỗi tháng cho từng người dùng trong loại phần mềm này là";
+$vocab["max_per_year_area"]       = "Số lượng đặt phần mềm tối đa mỗi năm cho từng người dùng trong loại phần mềm này là";
+$vocab["max_per_future_area"]     = "Số lượng đặt phần mềm ngoài ngạch tối đa cho từng người dùng trong loại phần mềm này là";
+$vocab["max_secs_per_day_global"]     = 'The maximum total length of bookings per day per người dùng across the whole system is %1$s %2$s';  // eg 2 hours
+$vocab["max_secs_per_week_global"]    = 'The maximum total length of bookings per week per người dùng across the whole system is %1$s %2$s';
+$vocab["max_secs_per_month_global"]   = 'The maximum total length of bookings per month per người dùng across the whole system is %1$s %2$s';
+$vocab["max_secs_per_year_global"]    = 'The maximum total length of bookings per year per người dùng across the whole system is %1$s %2$s';
+$vocab["max_secs_per_future_global"]  = 'The maximum total length of outstanding bookings per người dùng across the whole system is %1$s %2$s';
+$vocab["max_secs_per_day_area"]       = 'The maximum total length of bookings per day per người dùng in this area is %1$s %2$s';
+$vocab["max_secs_per_week_area"]      = 'The maximum total length of bookings per week per người dùng in this area is %1$s %2$s';
+$vocab["max_secs_per_month_area"]     = 'The maximum total length of bookings per month per người dùng in this area is %1$s %2$s';
+$vocab["max_secs_per_year_area"]      = 'The maximum total length of bookings per year per người dùng in this area is %1$s %2$s';
+$vocab["max_secs_per_future_area"]    = 'The maximum total length of outstanding bookings per người dùng in this area is %1$s %2$s';
+$vocab["skip_and_book"]           = "Bỏ qua và đặt phần mềm";
+$vocab["skip_and_book_note"]      = "Tiếp tục với đặt phần mềm, bỏ qua các đơn xung đột trước đó";
+
+// Used in pending.php
+$vocab["pending"]            = "Các đơn đặt phần mềm đang chờ duyệt";
+$vocab["none_outstanding"]   = "Bạn không có đơn đặt phần mềm đang chờ duyệt.";
+
+// Authentication stuff
+$vocab["accessdenied"]              = "Từ chối truy cập";
+$vocab["norights"]                  = "Bạn không có quyền cần thiết để phần mềmm trang này.";
+$vocab["please_login"]              = "Xin vui lòng đăng nhập";
+$vocab["users.name"]                = "Tên người dùng";
+$vocab["users.display_name"]        = "Tên";
+$vocab["users.password"]            = "Mật khẩu";
+$vocab["users.level"]               = "Quyền";
+$vocab["users.employee_code"]       = "Mã nhân viên";
+$vocab["users.department"]          = "Phòng ban";
+$vocab["users.timestamp"]           = "Lần cập nhật cuối";
+$vocab["users.last_login"]          = "Lần đăng nhập cuối";
+$vocab["unknown_user"]              = "Tên tài khoản hoặc mật khẩu không đúng!";
+$vocab["login"]                     = "Đăng nhập";
+$vocab["logoff"]                    = "Đăng xuất";
+$vocab["username_or_email"]         = "Tên người dùng hay địa chỉ email?";
+$vocab["lost_password"]             = "Quên mật khẩu?";
+$vocab["get_new_password"]          = "Lấy mật khẩu mới";
+$vocab["password_reset"]            = "Đặt lại mật khẩu";
+$vocab["password_reset_subject"]    = "Yêu cầu đặt lại mật khẩu";
+$vocab["password_reset_body"]       = 'Có người dùng đã yêu cầu đặt lại mật khẩu cho tài khoản %3$s. ' .
+                                      'Nếu đây không phải là bạn, bạn có thể bỏ qua email này.  Ngược lại ' .
+                                      'Bạn có thể đặt lại mật khẩu bằng cách vào đường địa chỉ dưới đây. ' .
+                                      'Địa chỉ này sẽ hết hạn trong %1$d %2$s.';
+$vocab["enter_username"]            = "Xin vui lòng nhập tên người dùng của bạn tại đây.";
+$vocab["enter_username_or_email"]   = "Xin vui lòng nhập tên tài khoản hay địa chỉ email của bạn tại đây.";
+$vocab["will_be_sent_instructions"] = "Bạn sẽ được gửi một tin nhắn email với các hướng dẫn làm thế nào để đặt lại mật khẩu của bạn.";
+$vocab["reset_password"]            = "Đặt lại mật khẩu";
+$vocab["pwd_check_email"]           = "Cảm ơn bạn.  Nếu có tài khoản người dùng tương ứng với những chi tiết đó sau đó bạn " .
+                                      "sẽ trong thời gian ngắn nhận một email với hướng dẫn cho đặt lại mật khẩu của bạn. " .
+                                      "Đừng quên kiểm tra thư mục spam/rác của bạn nếu nó không tới.";
+$vocab["invalid_link"]              = "Đường dẫn không hợp lệ";
+$vocab["pwd_request_failed"]        = "Email không thể gửi được cho người dùng này.";
+$vocab["link_invalid"]              = "Đường dẫn đặt lại mật khẩu không hợp lệ hoặc đã hết hạn.";
+$vocab["enter_new_password"]        = "Nhập mật khẩu mới của bạn dưới đây hai lần.";
+$vocab["pwd_must_contain"]          = "Mật khẩu phải bao gồm ít nhất:";
+$vocab["pwd_reset_success"]         = "Mật khẩu của bạn đã được đặt lại thành công.";
+
+// Database upgrade code
+$vocab["database_login"]           = "Đăng nhập cơ sở dữ liệu";
+$vocab["upgrade_required"]         = "Để hoàn tất nâng cấp cơ sở dữ liệu bây giờ cần được nâng cấp .  Xin vui lòng lưu lại cơ sở dữ liệu của bạn trước khi tiếp tục.";
+$vocab["supply_userpass"]          = "Xin vui lòng cấp một tên người dùng cơ sở dữ liệu và mật khẩu có quyền admin.";
+$vocab["contact_admin"]            = "Nếu bạn không phải là MRBS admin xin vui lòng liên hệ %s."; // $mrbs_admin
+$vocab["upgrading_site"]           = "Nâng cấp địa chỉ '%s'";  // site name
+$vocab["upgrading_main_site"]      = "Nâng cấp địa chỉ chính";
+$vocab["no_tables_found"]          = "Không tìm thấy bảng nào";
+$vocab["upgrade_to_version"]       = "Nâng cấp đến phiên bản cơ sở dữ liệu";
+$vocab["upgrade_to_local_version"] = "Nâng cấp đến phiên bản nội bộ cơ sở dữ liệu";
+$vocab["upgrade_completed"]        = "Nâng cấp cơ sở dữ liệu đã hoàn tất.";
+
+// User access levels
+$vocab["level_0"]            = "không";
+$vocab["level_1"]            = "Người dùng";
+$vocab["level_2"]            = "admin";
+$vocab["level_3"]            = "user admin";
+
+// Authentication database
+$vocab["user_list"]             = "Người dùng";
+$vocab["edit_user"]             = "Chỉnh sửa người dùng";
+$vocab["delete_user"]           = "Xóa người dùng này";
+//$vocab["users.name"]          = Use the same as above, for consistency.
+//$vocab["users.password"]      = Use the same as above, for consistency.
+$vocab["users.email"]           = "Địa chỉ email";
+$vocab["password_twice"]        = "Nếu bạn muốn đổi mật khẩu, xin vui lòng gõ mật khẩu mới hai lần";
+$vocab["passwords_not_eq"]      = "Các mật khẩu không trùng khớp!";
+$vocab["password_invalid"]      = "Mật khẩu không tuân thủ theo quy định.  Nó phải bao gồm ít nhất:";
+$vocab["policy_length"]         = "%d ký tự";
+$vocab["policy_alpha"]          = "%d chữ";
+$vocab["policy_lower"]          = "%d chữ viết thường";
+$vocab["policy_upper"]          = "%d chữ viết hoa";
+$vocab["policy_numeric"]        = "%d ký tự số";
+$vocab["policy_special"]        = "%d ký tự đặc biệt";
+$vocab["add_new_user"]          = "Thêm một người dùng mới";
+$vocab["action"]                = "Thực hiện";
+$vocab["user"]                  = "Người dùng";
+$vocab["administrator"]         = "Administrator";
+$vocab["unknown"]               = "Không rõ";
+$vocab["ok"]                    = "OK";
+$vocab["show_my_entries"]       = "Click để hiển thị phần mềm đặt sắp tới của tôi";
+$vocab["no_users_initial"]      = "Xin chào mừng đến với Hệ Thống đặt phần mềm!";
+$vocab["no_users_create_first_admin"] = "Trước khi bạn có thể làm bất cứ điều gì khác bạn cần tạo một admin " .
+                                        "user. Sau đó đăng nhập vào user đó và tạo thêm user và tạo " .
+                                        "loại phần mềm và phần mềm.";
+$vocab["warning_last_admin"]    = "Cảnh báo!  Đây là tài khoản admin cuối cùng và vì vậy bạn không thể xóa người dùng này hay loại bỏ quyền admin, trái lại bạn sẽ bị khóa ra ngoài hệ thống.";
+$vocab["copy_email_addresses"]  = "Sao chép địa chỉ email";
+
+// Used in search.php
+$vocab["invalid_search"]     = "Chuỗi tìm kiếm trống hoặc không hợp lệ.";
+$vocab["search_results"]     = 'Kết quả tìm kiếm cho \'%1$s\' từ %2$s';
+$vocab["nothing_found"]      = "Không tìm thấy đơn đặt phần mềm tương thích.";
+$vocab["records"]            = "Các bản ghi ";
+$vocab["through"]            = " qua ";
+$vocab["of"]                 = " của ";
+$vocab["previous"]           = "Trước";
+$vocab["next"]               = "Tiếp";
+$vocab["entry"]              = "Đơn đặt phần mềm";
+$vocab["search_button"]      = "Tìm kiếm";
+$vocab["search_for"]         = "Tìm kiếm cho";
+$vocab["from"]               = "Từ";
+
+// Used in report.php
+$vocab["report_on"]             = "Báo cáo trên Hội họp";
+$vocab["report_start"]          = "Ngày bắt đầu báo cáo";
+$vocab["report_end"]            = "Ngày kết thúc báo cáo";
+$vocab["match_area"]            = "Loại phần mềm tương thích";
+$vocab["match_room"]            = "Phần mềm tương thích";
+$vocab["match_type"]            = "Kiểu tương thích";
+$vocab["ctrl_click_type"]       = "Sử dụng Control-Click để chọn nhiều hơn một kiểu";
+$vocab["match_entry"]           = "Tiêu đề tương thích";
+$vocab["match_descr"]           = "Đối chiếu yêu cầu";
+$vocab["output"]                = "Đầu ra";
+$vocab["summary"]               = "Tóm tắt";
+$vocab["format"]                = "Định dạng";
+$vocab["html"]                  = "HTML";
+$vocab["csv"]                   = "CSV";
+$vocab["ical"]                  = "iCalendar (.ics file) - không bao gồm các chu trình";
+$vocab["combination_not_supported"] = "Đầu ra này không được hỗ trợ trong định dạng này";
+$vocab["summarize_by"]          = "Tóm tắt bởi";
+$vocab["sum_by_descrip"]        = "Tiêu đề";
+$vocab["sum_by_creator"]        = "Người tạo";
+$vocab["sum_by_type"]           = "Kiểu";
+$vocab["entry_found"]           = "Đơn đặt phần mềm tìm thấy";
+$vocab["entries_found"]         = "Các đơn đặt phần mềm tìm thấy";
+$vocab["summary_header"]        = "Tóm tắt (đơn đặt phần mềm) giờ";
+$vocab["summary_header_per"]    = "Tóm tắt (đơn đặt phần mềm) chu trình";
+$vocab["summary_header_both"]   = "Tóm tắt (đơn đặt phần mềm) giờ/chu trình";
+$vocab["entries"]               = "các đơn đặt phần mềm";
+$vocab["total"]                 = "Tổng";
+$vocab["submitquery"]           = "Chạy báo cáo";
+$vocab["sort_rep"]              = "Sắp xếp báo cáo bằng";
+$vocab["sort_rep_time"]         = "Ngày/giờ bắt đầu";
+$vocab["sort_room"]             = "Phần mềm";
+$vocab["fulldescription_short"] = "Yêu cầu";
+$vocab["both"]                  = "Tất cả";
+$vocab["with"]                  = "Với";
+$vocab["without"]               = "Trừ";
+$vocab["privacy_status"]        = "Tình trạng bảo mật";
+$vocab["search_criteria"]       = "Tìm kiếm tiêu chuẩn";
+$vocab["presentation_options"]  = "Tùy chọn đầu ra";
+$vocab["delete_entries"]        = "Xóa đơn đặt phần mềm";
+$vocab["delete_entries_warning"] = "CẢNH BÁO!  Điều này sẽ xóa tất cả các đơn đặt phần mềm tương ứng với " .
+                                   "chuỗi tìm kiếm.  Hành động không thể được hoàn tác.  " .
+                                   "Bạn có chắc chắn bạn muốn tiếp tục?\n\n" .
+                                   "Tổng số đơn đặt phần mềm sẽ bị xóa: ";
+$vocab["delete_entries_failed"] = "Đơn đặt phần mềm không thể bị xóa.";
+$vocab["registered"]            = "Đã đăng ký";
+$vocab["na"]                    = "[N/A]";
+
+// Used in admin.php
+$vocab["edit"]               = "Chỉnh sửa";
+$vocab["delete"]             = "Xóa";
+$vocab["rooms"]              = "Phần mềm";
+$vocab["in"]                 = "trong";
+$vocab["noareas"]            = "Không có loại phần mềm có quyền.";
+$vocab["noareas_enabled"]    = "Không có loại phần mềm khả dụng.";
+$vocab["addarea"]            = "Thêm loại phần mềm";
+$vocab["name"]               = "Tên";
+$vocab["noarea"]             = "Không có loại phần mềm đã chọn";
+$vocab["browserlang"]        = "Trình duyệt của bạn được đặt với thứ tự ưu tiên ngôn ngữ sau";
+$vocab["addroom"]            = "Thêm phần mềm";
+$vocab["capacity"]           = "Sức chứa";
+$vocab["norooms"]            = "Không có phần mềm được xác định.";
+$vocab["norooms_enabled"]    = "Không có phần mềm được cho phép.";
+$vocab["administration"]     = "Chi tiết phần mềm";
+$vocab["invalid_area_name"]  = "Tên loại phần mềm đó đã được sử dụng!";
+$vocab["empty_name"]         = "Bạn chưa nhập tên!";
+
+// Used in edit_area.php and/or edit_room.php
+$vocab["editarea"]                = "Chỉnh sửa loại phần mềm";
+$vocab["change"]                  = "Thay đổi";
+$vocab["editroom"]                = "Chỉnh sửa phần mềm";
+$vocab["viewroom"]                = "Xem phần mềm";
+$vocab["not_found"]               = " không tìm thấy";
+$vocab["room_admin_email"]        = "Email thông báo";
+$vocab["area_admin_email"]        = "Email thông báo";
+$vocab["area_first_slot_start"]   = "Bắt đầu của chỗ đầu";
+$vocab["area_last_slot_start"]    = "Bắt đầu của chỗ cuối";
+$vocab["area_res_mins"]           = "Phân giải (phút)";
+$vocab["area_def_duration_mins"]  = "Thời hạn mặc định (phút)";
+$vocab["times_along_top"]         = "Thời gian dọc theo đầu";
+$vocab["invalid_area"]            = "Loại phần mềm không hợp lệ!";
+$vocab["invalid_room"]            = "Phần mềm không hợp lệ!";
+$vocab["invalid_room_name"]       = "Tên phần mềm này đã được sử dụng trong loại phần mềm!";
+$vocab["invalid_email"]           = "Địa chỉ email không hợp lệ!";
+$vocab["invalid_time_format"]     = "Thời gian phải ở định dạng 'hh:mm'";
+$vocab["invalid_resolution"]      = "Tổ hợp không hợp lệ của chỗ đầu, chỗ cuối và phân giải!";
+$vocab["general_settings"]        = "Chung";
+$vocab["time_settings"]           = "Thời gian chỗ";
+$vocab["period_settings"]         = "Tên chu trình";
+$vocab["add_period"]              = "Thêm chu trình";
+$vocab["confirmation_settings"]   = "Xác nhận cấu hình";
+$vocab["allow_confirmation"]      = "Cho phép thử đặt phần mềm";
+$vocab["default_settings_conf"]   = "Cài đặt mặc định";
+$vocab["default_confirmed"]       = "Đã xác nhận";
+$vocab["default_tentative"]       = "Đang chờ";
+$vocab["approval_settings"]       = "Cài đặt duyệt";
+$vocab["enable_approval"]         = "Yêu cầu đặt phần mềm được duyệt";
+$vocab["enable_reminders"]        = "Cho phép người dùng nhắc admins";
+$vocab["private_settings"]        = "Cài đặt bảo mật";
+$vocab["allow_private"]           = "Cho phép đặt phần mềm riêng tư";
+$vocab["force_private"]           = "Bắt buộc đặt phần mềm riêng tư";
+$vocab["default_settings"]        = "Cài đặt mặc định/bắt buộc";
+$vocab["default_private"]         = "Riêng tư";
+$vocab["default_public"]          = "Công khai";
+$vocab["private_display"]         = "Cài đặt bảo mật (hiển thị)";
+$vocab["private_display_label"]   = "Đặt phần mềm riêng tư nên được hiển thị như thế nào?";
+$vocab["private_display_caution"] = "CẢNH BÁO: hãy suy nghĩ cẩn thận về các rủi ro bảo mật trước khi thay đổi các cài đặt này!";
+$vocab["treat_respect"]           = "Tôn trọng cài đặt bảo mật của đơn đặt phần mềm";
+$vocab["treat_private"]           = "Coi tất cả các đơn đặt phần mềm là riêng tư, bỏ qua các cài đặt bảo mật của chúng";
+$vocab["treat_public"]            = "Coi tất cả các đơn đặt phần mềm là công khai, bỏ qua các cài đặt bảo mật của chúng";
+$vocab["sort_key"]                = "Sắp xếp khóa";
+$vocab["sort_key_note"]           = "Đây là khóa để đặt phần mềm";
+$vocab["booking_policies"]        = "Chính sách đặt phần mềm";
+$vocab["booking_creation"]        = "Tạo phần mềm";
+$vocab["booking_deletion"]        = "Xóa phần mềm";
+$vocab["booking_limits"]          = "Giới hạn trên số lượng đặt phần mềm";
+$vocab["booking_limits_secs"]     = "Giới hạn trên tổng thời gian đặt phần mềm (chỉ chế độ thời gian)";
+$vocab["booking_durations"]       = "Giới hạn trên thời hạn đặt phần mềm";
+$vocab["max_duration"]            = "Thời hạn tối đa";
+$vocab["min_book_ahead"]          = "Đặt phần mềm nâng cao - tối thiểu";
+$vocab["max_book_ahead"]          = "Đặt phần mềm nâng cao - tối đa";
+$vocab["this_area"]               = "Loại phần mềm này";
+$vocab["whole_system"]            = "Toàn bộ hệ thống";
+$vocab["whole_system_note"]       = "Các giá trị cho toàn bộ hệ thống được đặt trong config file";
+$vocab["max_per_day"]             = "Số lượng tối đa mỗi ngày";
+$vocab["max_per_week"]            = "Số lượng tối đa mỗi tuần";
+$vocab["max_per_month"]           = "Số lượng tối đa mỗi tháng";
+$vocab["max_per_year"]            = "Số lượng tối đa mỗi năm";
+$vocab["max_per_future"]          = "Số lượng tối đa trong tương lai";
+$vocab["max_secs_per_day"]        = "Thời gian tối đa mỗi ngày";
+$vocab["max_secs_per_week"]       = "Thời gian tối đa mỗi tuần";
+$vocab["max_secs_per_month"]      = "Thời gian tối đa mỗi tháng";
+$vocab["max_secs_per_year"]       = "Thời gian tối đa mỗi năm";
+$vocab["max_secs_per_future"]     = "Thời gian tối đa trong tương lai";
+$vocab["custom_html"]             = "Tùy chỉnh HTML";
+$vocab["custom_html_note"]        = "Trường này có thể được sử dụng để hiển thị HTML của riêng bạn, ví dụ như một bản đồ Google đã nhúng";
+$vocab["email_list_note"]         = "Nhập một danh sách địa chỉ email được phân chia bởi dấu phẩy";
+$vocab["mode"]                    = "Chế độ";
+$vocab["mode_periods"]            = "Chu trình";
+$vocab["mode_times"]              = "Thời gian";
+$vocab["times_only"]              = "Chỉ chế độ thời gian";
+$vocab["enabled"]                 = "Sẵn sàng";
+$vocab["disabled"]                = "Không khả dụng";
+$vocab["disabled_area_note"]      = "Nếu loại phần mềm này bị vô hiệu hóa, nó sẽ không xuất hiện trong khung nhìn lịch " .
+                                    "và sẽ không thể đặt phần mềm trong đó.   Tuy nhiên các đơn đặt phần mềm đang tồn tại " .
+                                    "sẽ được giữ lại và nhìn thấy được trong kết quả Tìm kiếm và Báo cáo.";
+$vocab["disabled_room_note"]      = "Nếu phần mềm này bị vô hiệu hóa, nó sẽ không xuất hiện trong khung nhìn lịch " .
+                                    "và sẽ không thể đặt phần mềm đó.   Tuy nhiên các đơn đặt phần mềm đang tồn tại " .
+                                    "sẽ được giữ lại và nhìn thấy được trong kết quả Tìm kiếm và Báo cáo.";
+$vocab["book_ahead_note_periods"] = "Khi sử dụng chu trình, thời gian dặt trước được làm tròn xuống tới cả ngày gần nhất.";
+$vocab["invalid_types"]           = "Kiểu không hợp lệ";
+$vocab["invalid_types_note"]      = "Đây là các kiểu không được phép sử dụng trong phần mềm này.";
+
+
+// Used in edit_users.php
+$vocab["name_empty"]          = "Bạn phải nhập tên.";
+$vocab["name_not_unique"]     = "đã tồn tại.   Xin vui lòng chọn tên khác.";
+$vocab["invalid_date"]        = "Trường '%s' phải bao gồm một ngày hợp lệ trong định dạng YYYY-MM-DD.";
+$vocab["confirm_delete_user"] = "Bạn có chắc chắn bạn muốn xóa người dùng này không?";
+
+// Used in del.php
+$vocab["deletefollowing"]    = "Điều này sẽ xóa các đơn đặt phần mềm sau:";
+$vocab["and_n_more"]         = "và %s cái nữa";  // %s rather than %d because n is the output of number_format()
+$vocab["sure"]               = "Bạn có chắc không?";
+$vocab["YES"]                = "YES";
+$vocab["NO"]                 = "NO";
+$vocab["delarea"]            = "Bạn phải xóa tất cả các phần mềm trong loại phần mềm này trước khi bạn có thể xóa it<p>";
+
+// Used in help.php
+$vocab["about_mrbs"]              = "Về MRBS";
+$vocab["mrbs_version"]            = "Phiên bản MRBS";
+$vocab["db_schema_version"]       = "Phiên bản lược đồ cơ sở dữ liệu";
+$vocab["db_local_schema_version"] = "Phiên bản lược đồ cơ sở dữ liệu nội bộ";
+$vocab["config_details"]          = "Chi tiết cấu hình";
+$vocab["server_details"]          = "Chi tiết server";
+$vocab["database"]                = "Cơ sở dữ liệu";
+$vocab["system"]                  = "Hệ thống";
+$vocab["servertime"]              = "Thời gian server";
+$vocab["server_software"]         = "Phần mềm server";
+$vocab["extensions"]              = "Phần mở rộng";
+$vocab["please_contact"]          = "Xin vui lòng liên hệ ";
+$vocab["for_any_questions"]       = "cho bất kỳ câu hỏi nào chưa được trả lời ở đây.";
+
+// Used in import.php
+$vocab["import_icalendar"]            = "Nhập một file iCalendar (.isc)";
+$vocab["source"]                      = "Nguồn";
+$vocab["area_room_settings"]          = "Loại phần mềm và phần mềm";
+$vocab["other_settings"]              = "Các cài đặt khác";
+$vocab["import_intro"]                = "Mẫu này cho phép bạn nhập một RFC 5545 compliant iCalendar " .
+                                        "vào MRBS từ một file hoặc URL.   Chỉ các sự kiện lặp này " .
+                                        "có quy tắc lặp lại với kiểu lặp lại tương đương trong " .
+                                        "MRBS sẽ được nhập.";
+$vocab["supported_file_types"]        = "Những kiểu file sau được hỗ trợ:";
+$vocab["import_text_file"]            = "file iCalendar (.isc) chưa nén";
+$vocab["import_zip"]                  = "tệp nén zip, bao gồm nhiều file trong một tệp nén";
+$vocab["import_gzip"]                 = "file gzip";
+$vocab["import_bzip2"]                = "file bzip2";
+$vocab["source_type"]                 = "Kiểu nguồn";
+$vocab["file"]                        = "File";
+$vocab["file_name"]                   = "File";
+$vocab["url"]                         = "URL";
+$vocab["invalid_url"]                 = "URL không hợp lệ";
+$vocab["import"]                      = "Nhập";
+$vocab["upload_failed"]               = "Tải lên thất bại";
+$vocab["max_allowed_file_size"]       = "Kích cỡ file cho phép tối đa là ";
+$vocab["no_file"]                     = "Không có file đã được tải lên";
+$vocab["could_not_process"]           = "Nhập thất bại: không thể xử lý file";
+$vocab["badly_formed_ics"]            = "Hình thành VCALENDAR file xấu";
+$vocab["default_room"]                = "Phần mềm mặc định";
+$vocab["default_room_note"]           = "Phần mềm được sử dụng nếu không có tài sản Địa điểm được xác định";
+$vocab["ignore_location"]             = "Sử dụng phần mềm mặc định thay cho Địa điểm";
+$vocab["add_location"]                = "Thêm Địa điểm tới";
+$vocab["expanded_name"]               = '%1$s [%2$s]'; // 1$ - SUMMARY, 2$ - LOCATION
+$vocab["expanded_empty_name"]         = '[%s]'; // LOCATION
+$vocab["expanded_description"]        = '%1$s [%2$s]'; // 1$ - DESCRIPTION, 2$ - LOCATION
+$vocab["expanded_empty_description"]  = '[%s]'; // LOCATION
+$vocab["area_room_order"]             = "Đặt";
+$vocab["area_room_order_note"]        = "Đơn đặt của tên loại phần mềm và phần mềm trong tài sản Địa điểm";
+$vocab["area_room"]                   = "Loại phần mềm-Phần mềm";
+$vocab["room_area"]                   = "Phần mềm-Loại phần mềm";
+$vocab["area_room_delimiter"]         = "Dấu phân cách";
+$vocab["area_room_delimiter_note"]    = "Chuỗi tách tên loại phần mềm và phần mềm trong tài sản Địa điểm.  " .
+                                        "Nếu không có dấu phân cách được tìm thấy MRBS sẽ tìm một phần mềm độc nhất với cùng " .
+                                        "tên với Địa điểm";
+$vocab["area_room_create"]            = "Tạo phần mềm nếu cần thiết";
+$vocab["import_past"]                 = "Nhập đơn đặt phần mềm trước";
+$vocab["default_type"]                = "Kiểu mặc định";
+$vocab["room_does_not_exist_no_area"] = "phần mềm không tồn tại và không thể được thêm - không đặt loại phần mềm";
+$vocab["room_not_unique_no_area"]     = "tên phần mềm đã trùng.  Không thể chọn phần mềm không có loại phần mềm.";
+$vocab["area_does_not_exist"]         = "Loại phần mềm không tồn tại:";
+$vocab["room_does_not_exist"]         = "Phần mềm không tồn tại:";
+$vocab["creating_new_area"]           = "Tạo loại phần mềm mới:";
+$vocab["creating_new_room"]           = "Tạo phần mềm mới:";
+$vocab["could_not_create_area"]       = "Không thể tạo loại phần mềm";
+$vocab["could_not_create_room"]       = "Không thể tạo phần mềm";
+$vocab["could_not_find_room"]         = "Không thể tìm phần mềm";
+$vocab["could_not_import"]            = 'Could not import \'%1$s\' (UID: %2$s)';  // 1$ name, 2$ UID
+$vocab["import_no_SUMMARY"]           = "Sự kiện đã nhập - không có SUMMARY khả dụng";  // This string cannot be empty
+$vocab["no_LOCATION"]                 = "VEVENT không bao gồm tài sản Địa điểm ";
+$vocab["invalid_RRULE"]               = "RRULE không hợp lệ: phần FREQ thiếu";
+$vocab["more_than_one_BYDAY"]         = "MRBS không hỗ trợ nhiều hơn một giá trị BYDAY khi FREQ=";
+$vocab["BYDAY_equals_5"]              = "MRBS không hỗ trợ giá trị BYDAY bằng 5";
+$vocab["unsupported_FREQ"]            = "MRBS không hỗ trợ FREQ=";
+$vocab["unsupported_COUNT"]           = "COUNT chưa hỗ trợ bởi MRBS";
+$vocab["no_indefinite_repeats"]       = "Lặp lại vô thời hạn chưa được hỗ trợ bởi MRBS";
+$vocab["events_imported"]             = "sự kiện đã nhập";
+$vocab["events_not_imported"]         = "sự kiện chưa nhập";
+
+// Used in DataTables
+$vocab["dt_all"]             = "Tất cả";
+$vocab["show_hide_columns"]  = "Hiển thị / ẩn cột";
+$vocab["copy"]               = "Sao chép";
+// "csv" already defined above
+$vocab["excel"]              = "Excel";
+$vocab["pdf"]                = "PDF";
+$vocab["print"]              = "In";
+$vocab["restore_original"]   = "Khôi phục nguyên dạng";
+
+// Entry types
+$vocab["type."]             = "Xin vui lòng chọn một kiểu";
+$vocab["type.I"]            = "Trung bình";
+$vocab["type.E"]            = "Cao";
+
+// General
+$vocab["fatal_error"]        = "Rất tiếc!  Thật không may MRBS đã gặp lỗi nghiêm trọng.  Xin vui lòng tham khảo admin hệ thống của bạn.";
+$vocab["fatal_db_error"]     = "Lỗi nghiêm trọng: thật không may cơ sở dữ liệu không khả dụng vào thời điểm này.";
+$vocab["fatal_no_tables"]    = "Lỗi nghiêm trọng: bảng MRBS không tồn tại hoặc không thể truy cập được.";
+$vocab["session_expired"]    = "Phiên của bạn đã hết hạn.";
+$vocab["browser_not_supported"] = "Thật không may trình duyệt của bạn không được hỗ trợ bởi %s.  Bạn sẽ cần nâng cấp tới " .
+                                  "phiên bản gần đây hơn, hoặc sử dụng trình duyệt khác.";
+$vocab["back"]               = "Trở lại";
+
+
