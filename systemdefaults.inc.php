@@ -1687,7 +1687,7 @@ $auth['show_registrant_names_in_calendar'] = false;
 // Ngoài ra, bạn có thể chọn có hiển thị tên người đăng ký trong lịch hay không
 // nếu lịch được mở công khai và người dùng chưa đăng nhập hoặc có quyền truy cập cấp 0.
 // LƯU Ý: bạn cũng cần $ auth ['show_registrant_names_in_calendar'] = true; để cái này hoạt động
-$auth['show_registrant_names_in_public_calendar'] = false;
+$auth['show_registrant_names_in_public_calendar'] = true;
 
 // Set this to true if you want ordinary users to be able to register others.
 // Đặt điều này thành true nếu bạn muốn người dùng bình thường có thể đăng ký người khác.
@@ -1752,7 +1752,8 @@ $auth['log_credentials'] = false;
 
 // Set the email address of the From field. Default is 'admin_email@your.org'
 // Đặt địa chỉ email của trường Từ. Mặc định là 'admin_email@your.org'
-$mail_settings['from'] = 'it@nhuatienphong.vn';
+// $mail_settings['from'] = 'it@nhuatienphong.vn';
+$mail_settings['from'] = '';
 
 // By default MRBS will send some emails (eg booking approval emails) as though they have come from
 // the user, rather than the From address above.   However some email servers will not allow this in
@@ -1774,13 +1775,13 @@ $mail_settings['use_from_for_all_mail'] = false;
 // địa chỉ email vì trên một số hệ thống thư, ví dụ: IBM Domino, email iCalendar
 // thông báo bị hủy âm thầm nếu địa chỉ email của người tổ chức giống nhau
 // với tư cách là của người nhận. Trên các hệ thống khác, bạn có thể nhận được thông báo "Không tìm thấy cuộc họp".
-$mail_settings['organizer'] = 'it@nhuatienphong.vn';
+$mail_settings['organizer'] = '';
 
 // Set the recipient email. Default is 'admin_email@your.org'. You can define
 // more than one recipient like this "john@doe.com,scott@tiger.com"
 // Đặt email người nhận. Mặc định là 'admin_email@your.org'. Bạn có thể xác định
 // nhiều người nhận như thế này "john @ doe.com, scott @ tiger.com"
-$mail_settings['recipients'] = 'it@nhuatienphong.vn';
+$mail_settings['recipients'] = '';
 
 // Set email address of the Carbon Copy field. Default is ''. You can define
 // more than one recipient (see 'recipients')
@@ -1812,11 +1813,11 @@ $mail_settings['treat_cc_as_to'] = false;
 // Đặt thành true hoặc false theo yêu cầu
 // (Lưu ý: địa chỉ email cho quản trị viên khu vực và phòng được đặt từ
 // các trang edit_area.php và edit_room.php trong MRBS)
-$mail_settings['admin_on_bookings']      = true;  // the addresses defined by $mail_settings['recipients'] below
-$mail_settings['area_admin_on_bookings'] = true;  // the area administrator
-$mail_settings['room_admin_on_bookings'] = true;  // the room administrator
-$mail_settings['booker']                 = true;  // the person making the booking
-$mail_settings['book_admin_on_approval'] = true;  // the booking administrator when booking approval is enabled
+$mail_settings['admin_on_bookings']      = false;  // the addresses defined by $mail_settings['recipients'] below
+$mail_settings['area_admin_on_bookings'] = false;  // the area administrator
+$mail_settings['room_admin_on_bookings'] = false;  // the room administrator
+$mail_settings['booker']                 = false;  // the person making the booking
+$mail_settings['book_admin_on_approval'] = false;  // the booking administrator when booking approval is enabled
                                                    // (which is the MRBS admin, but this setting allows MRBS
                                                    // to be extended to have separate booking approvers)
 
@@ -1846,9 +1847,9 @@ $mail_settings['book_admin_on_approval'] = true;  // the booking administrator w
 // và trước đây, nơi không có cài đặt cấu hình rõ ràng, nhưng thư luôn được gửi
 // cho các đặt chỗ mới nếu có ai đó gửi chúng đến)
 
-$mail_settings['on_new']    = true;   // when an entry is created
-$mail_settings['on_change'] = true;  // when an entry is changed
-$mail_settings['on_delete'] = true;  // when an entry is deleted
+$mail_settings['on_new']    = false;   // when an entry is created
+$mail_settings['on_change'] = false;  // when an entry is changed
+$mail_settings['on_delete'] = false;  // when an entry is deleted
 
 // It is also possible to allow all users or just admins to choose not to send an
 // email when creating or editing a booking.  This can be useful if an inconsequential
@@ -1962,7 +1963,7 @@ $smtp_settings['secure'] = 'ssl';         // Encryption method: '', 'tls' or 'ss
                                        // server doesn't advertise it. Conversely if you specify '' and the server advertises TLS, TLS
                                        // will be used, unless the 'disable_opportunistic_tls' configuration parameter shown below is
                                        // set to true.
-$smtp_settings['username'] = 'it@nhuatienphong.vn';       // Username (if using authentication)
+$smtp_settings['username'] = '';       // Username (if using authentication)
 $smtp_settings['password'] = 'sbmpydmyfsarlwxr';       // Password (if using authentication)
 
 // The hostname to use in the Message-ID header and as default HELO string.

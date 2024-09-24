@@ -62,8 +62,8 @@ function mrbsCheckFree(array $booking, $ignore, $repignore)
   $sql = "SELECT E.id, name, start_time, end_time, create_by, status, room_name
             FROM " . _tbl('entry') . " E, " . _tbl('room') . " R
            WHERE E.room_id=R.id
-             AND start_time = ?
-             AND end_time = ?
+             AND start_time > ?
+             AND end_time < ?
              AND E.room_id = ?";
 
   $sql_params = array($booking['end_time'],

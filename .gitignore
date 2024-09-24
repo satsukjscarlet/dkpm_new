@@ -10,3 +10,6 @@ web/config.inc.php
 /.idea
 /hg-code.iml
 /nbproject
+
+# Ignore file config
+config.php

@@ -253,6 +253,7 @@ $booking_types[] = "A";
 $vocab_override["en"]["type.A"] = "Thấp";
 
 $select_options['entry.name'] = array(
+   'NCPT' => 'Nghiên cứu phát triển',
    'DVKH' => 'Dịch vụ khách hàng',
    'KTNB' => 'Kiểm Toán Nội Bộ',
    'MKT' => 'Makerting',
@@ -273,7 +274,6 @@ $select_options['entry.name'] = array(
    'DVKH' => 'Dịch vụ khách hàng',
    'KTNB' => 'Kiểm Toán Nội Bộ',
    'MKT' => 'Makerting',
-   'NCPT' => 'Nghiên cứu phát triển',
    'NMCK' => 'Nhà máy cơ khí',
    'NMPE' => 'Nhà máy PE',
    'NMPT' => 'Nhà máy phụ tùng',
