@@ -254,6 +254,7 @@ $vocab_override["en"]["type.A"] = "Thấp";
 
 $select_options['entry.name'] = array(
    'NCPT' => 'Nghiên cứu phát triển',
+   'CNCL' => 'Công nghệ chất lượng',
    'DVKH' => 'Dịch vụ khách hàng',
    'KTNB' => 'Kiểm Toán Nội Bộ',
    'MKT' => 'Makerting',
@@ -263,8 +264,6 @@ $select_options['entry.name'] = array(
    'NMPT' => 'Nhà máy phụ tùng',
    'NMPVC' => 'Nhà máy PVC',
    'NSCL' => 'Nhân sự chiến lược',
-   'PTTT1' => 'Phát triển thị trường 1',
-   'PTTT2' => 'Phát triển thị trường 2',
    'QLDA' => 'Quản lý dự án',
    'TCKT' => 'Tài chính kế toán',
    'VT' => 'Vật tư',
